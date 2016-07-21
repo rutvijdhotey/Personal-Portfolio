@@ -19,35 +19,84 @@ html {
 body {
   font-family: Oregano, cursive;
   margin: 0;
-  color: #fff;
-  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+  color: #000;
+  background-image: url("../images/cubes.png");
+  background-color: #2e7bcf;
+  
 }
 
 header {
   padding-bottom: 40px;
-  background: #2e7bcf 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  color:#000;
 }
+
+header>div{
+  padding-left: 40px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.container-fluid{
+  padding-bottom: 0px;
+}
+
 ul {
-    color:#fff;
-    display: block;
-    list-style-type: disc;
+    float: right;   
+    color:#000;
+    list-style-type: none;
+    margin-bottom: 0px;
 }
 
-header .nav-list {
-    color:#fff;
-    padding-top: 1.5em;
-    padding-left: 0;
-    position: relative;
-    float: right;
+.navbar .navbar-default .navbar-brand{
+  text-align: center;
+  color: #000;
+  font-size: 1.5em;
+
 }
 
-.nav-list li {
-  color:#fff;
-    display: block;
+#brand-name{
+  text-align: center;
+  margin: auto;
+  display: block;
+  
+}
+
+#Hi-name{
+  margin-top: 125px;
+}
+
+li {
     float: left;
 }
 
+li a {
+  font-size: 1.2em;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+
+#top-nav{
+  color: #000;
+  opacity: 0.7;
+  border: none;
+  margin: 0 0 0 0;
+  position: fixed;
+  top: 0;
+}
+#top-nav a:hover {
+  color: #2e7bcf;
+  text-decoration: none;
+}
+
+
+.active {
+    background-color: #2e7bcf;
+    color: white;
+}
 /* HTML5 display definitions
    ========================================================================== */
 
