@@ -151,10 +151,10 @@ b{
 
 .section_division{
   padding : 1px 10px 10px 20px;
-  box-shadow: 0px 5px 5px #ff;
+  box-shadow: 0px 5px 5px #d4d4d4;
   margin-top: 75px;
   height : 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 /* ID ELEMENTS */
 #top_nav {
@@ -204,7 +204,7 @@ b{
   font-size: 2em;
   font-weight: bolder;
   height: 100%;
-  box-shadow: 0px 5px 5px #111;
+  box-shadow: 0px 5px 5px #d4d4d4;
 }
 
 #mail_me{
