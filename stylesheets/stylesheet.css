@@ -21,13 +21,12 @@ body {
   margin: 0;
   color: #000;
   background-image: url("../images/cubes.png");
-  background-color: #2e7bcf;
+  background-color: #f7f7f7;
   
 }
 
 header {
   background-color: #fff;
-  opacity: 0.85;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -99,9 +98,9 @@ li>a {
   text-align: center;
   padding:10px;
   text-decoration: none;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
 }
 
 section{
@@ -110,10 +109,15 @@ section{
 
 }
 
-a:hover {
-  color: #2e7bcf;
+
+li>a:hover {
+  color: #f7f7f7;
   text-decoration: none;
+  background-color: #00ee09;
+  border-radius: 10px;
 }
+
+
 
 img{
   float: right;
@@ -130,7 +134,7 @@ b{
 }
 
 .active {
-    background-color: #2e7bcf;
+    background-color: #f7f7f7;
     color: white;
 }
 
@@ -147,11 +151,15 @@ b{
 
 .section_division{
   padding : 1px 10px 10px 20px;
-  box-shadow: 0px 5px 5px #111;
+  box-shadow: 0px 5px 5px #ff;
   margin-top: 75px;
   height : 100%;
+  margin-bottom: 20px;
 }
 /* ID ELEMENTS */
+#top_nav {
+
+}
 
 #menu {
     float: right;   
@@ -181,7 +189,8 @@ b{
 
 #brand-name:hover{
   font-size: 1.5em;
-  color: #2e7bcf;
+  color: #00f109;
+  text-decoration: none;
 }
 
 #name{
@@ -196,6 +205,18 @@ b{
   font-weight: bolder;
   height: 100%;
   box-shadow: 0px 5px 5px #111;
+}
+
+#mail_me{
+  color: #f7f7f7;
+  text-decoration: none;
+  background-color: #00ee09;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#mail_me:hover {
+  
 }
 
 #icon_links{

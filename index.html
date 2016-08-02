@@ -14,17 +14,20 @@
 
    <link rel="stylesheet" href="stylesheets/stylesheet.css">
    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
-    
-    
+   
+
+  <script data-require="jquery@2.0.3" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+  <script src = "../javascripts/script.js"> 
+  </script>
   <title>Personal-Portfolio of Rutvij Dhotey</title>
+  
   </head>
 
   <body>
     <header id ="top_nav" class = "header fixed-navbar">
         <div class="container">
-            <a id ="brand-name" href="index.html"><img id="avatar" src="../Personal-Portfolio/images/myavatar.svg" height="60" width="55" align="left">
+            <a id ="brand-name" href="index.html"><img id="avatar" src="../images/myavatar.svg" height="60" width="55" align="left">
               Rutvij Dhotey</a>
-
           <ul id = "menu">
             <li><a href="#about_me">About me</a></li>
             <li><a href="#my_work">My Work</a></li>
@@ -33,6 +36,7 @@
         </div><!-- /.container-->
     </header>
    
+   <div class = "content">
     <section id = "my_section" href="#my_section">
       <div>
         <p id = "name">
@@ -43,14 +47,14 @@
       </div> 
       <div id= "icon_links" class = "icons">
         <a href="http://github.com/rutvijdhotey">
-            <img id="avatar" src="../Personal-Portfolio/images/icons/github.svg" height="90" width="75" align="left">
+            <img id="avatar" src="../images/icons/github.svg" height="90" width="75" align="left">
         </a>
         <a href="https://www.linkedin.com/in/rutvij-dhotey-359193a2
 ">
-            <img id="avatar" src="../Personal-Portfolio/images/icons/linkedin.svg" height="90" width="75" align="left">
+            <img id="avatar" src="../images/icons/linkedin.svg" height="90" width="75" align="left">
         </a>
         <a href="https://twitter.com/RDhotey">
-            <img id="avatar" src="../Personal-Portfolio/images/icons/twitter.svg" height="90" width="75" align="left">
+            <img id="avatar" src="../images/icons/twitter.svg" height="90" width="75" align="left">
         </a>
       </div>
     </section>
@@ -75,6 +79,27 @@
   <section id = "my_work" class = "section_division">
     <h1 >My Work</h1>
      <p style ="font-weight:bolder; font-size: 1.2em ">Work Experience</p>
+     <div>
+      <p> Software Engineering Intern at FanDuel, Inc. in the numberFire Data Analytics team </p>
+      <ul style = "list-type : bullet">Responsibilities 
+          <li>Participate in software development process, building out website features using primarily PHP</li>
+          <li>Tie-in web interfaces of HTML/CSS/Javascript with service-side controllers</li>
+          <li>Test and debug new and existing code</li>
+          <li>Object-oriented programming working with MySQL and numerous AWS technologies</li>
+          <li>Communicating and project planning with teammates</li>
+        </ul>
+        <hr>
+
+      <p> Software UI / Control Systems Internship</p>
+      <ul style = "list-type : bullet">Responsibilities 
+          <li>Electronics and Algorithm Development Department (PLC and Ladder Programming)</li>
+          <li>Worked on the front end of the Company’s Website. Responsive Design and Bootstrap </li>
+          <li>Test and debug new and existing code</li>
+          <li>Wrote and tested algorithms in ladders for Elevator and Coca-Cola bottle filling plant</li>
+        </ul>
+        <hr>
+
+     </div>
      <p style ="font-weight:bolder; font-size: 1.2em ">Projects</p>
       <div>
         <p> <u>Website for a Fast-Food Chain (In progress)</u><br>
@@ -143,28 +168,10 @@
 
     <section id = "contact_me" class = "section_division" href="#about_me">
     <h1 > Contact Me... </h1>
-    <p>You can call me at 4434102564 <br> or email me at rutvij.dhotey@gmail.com</p>
-      <form action="mailto:rutvij.dhotey@gmail.com" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" style = "font-size : 1em" />
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail" />
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message" ></textarea>
-    </div>
-    
-    <div class="button">
-        <button type="submit">Send your message</button>
-    </div>
-  </form>
+    <a id="mail_me" href="mailto:rutvij.dhotey@gmail.com" >Send me a message</a>
 
     </section>
-  
+  </div>
   
   </body>
 </html>
