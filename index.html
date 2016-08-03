@@ -26,7 +26,7 @@
   <body>
     <header id ="top_nav" class = "header fixed-navbar">
         <div class="container">
-            <a id ="brand-name" href="index.html"><img id="avatar" src="../Personal-Portfolio/images/myavatar.svg" height="60" width="55" align="left">
+            <a id ="brand-name" href="index.html"><img id="avatar" src="myAvatar.svg" height="60" width="55" align="left">
               Rutvij Dhotey</a>
           <ul id = "menu">
             <li><a href="#about_me">About me</a></li>
@@ -49,8 +49,7 @@
         <a href="http://github.com/rutvijdhotey">
             <img id="avatar" src="../images/icons/github.svg" height="90" width="75" align="left">
         </a>
-        <a href="https://www.linkedin.com/in/rutvij-dhotey-359193a2
-">
+        <a href="https://www.linkedin.com/in/rutvij-dhotey-359193a2">
             <img id="avatar" src="../images/icons/linkedin.svg" height="90" width="75" align="left">
         </a>
         <a href="https://twitter.com/RDhotey">
@@ -77,10 +76,14 @@
     </section>
   
   <section id = "my_work" class = "section_division">
-    <h1 >My Work</h1>
+    
+    <div><h1 >My Work</h1></div>
      <p style ="font-weight:bolder; font-size: 1.2em ">Work Experience</p>
+     
      <div>
-      <p> Software Engineering Intern at FanDuel, Inc. in the numberFire Data Analytics team </p>
+      <p> <u>Software Engineering Intern at FanDuel, Inc. in the numberFire Data Analytics team </u></p>
+      <div class="company_logo"><img src="../images/icons/fanduel2.png" height="70" width="200"></div>
+      <div class="company_logo"><img src="../images/icons/numberfire-logo.jpg" height="70" width="200"></div>
       <ul style = "list-type : bullet">Responsibilities 
           <li>Participate in software development process, building out website features using primarily PHP</li>
           <li>Tie-in web interfaces of HTML/CSS/Javascript with service-side controllers</li>
@@ -90,7 +93,8 @@
         </ul>
         <hr>
 
-      <p> Software UI / Control Systems Internship</p>
+      <p> <u>Software UI / Control Systems Internship </u></p>
+      <div class="company_logo"><img src="../images/icons/asia_automation.jpg" height="70" width="70"></div>
       <ul style = "list-type : bullet">Responsibilities 
           <li>Electronics and Algorithm Development Department (PLC and Ladder Programming)</li>
           <li>Worked on the front end of the Company’s Website. Responsive Design and Bootstrap </li>
@@ -99,23 +103,29 @@
         </ul>
         <hr>
 
-     </div>
+     </div class = "project_section">
      <p style ="font-weight:bolder; font-size: 1.2em ">Projects</p>
       <div>
         <p> <u>Website for a Fast-Food Chain (In progress)</u><br>
+          <a href="https://github.com/rutvijdhotey/WebsiteCNC/tree/gh-pages">
+           <div class="project_logo"><img src="../images/icons/fastfood.svg" height="50" width="70"></div>
+          </a>
         <ul style = "list-type : bullet">This is a responsive website made using 
           <li>HTML5</li>
           <li>CSS & Twitter Bootstrap</li>
           <li>JS</li>
         </ul>
+
         The basic layout and design was made using hand drawings and later implemented using Twitter Bootstrap. The website is still under construction hence not published. However i have included the github link to check the work in progress.
         </p>
       </div> 
       
+      <hr>
 
-
-      <div>
+      <div class = "project_section">
         <p> <u>Home Automation: Wireless Control of Home Appliances </u><br>
+          
+          <div class="project_logo"><img src="../images/icons/home_auto.svg" height="50" width="70"></div>
         <ul style = "list-type : bullet">
           <li>Implemented using Microcontroller PIC and also using Raspberry Pi B+ as the main hub, which connects to the internet using TCP/IP protocol.</li>
           <li>Controlling of devices achieved by using TRIAC and OPTOCOUPLER, which not only controls ON/OFF but also speed and intensity of fans and bulbs.</li>
@@ -125,11 +135,14 @@
         </ul>
         </p>
       </div> 
+      <hr>
        
-      <div>
-        <p> <u>Pattern Recognition and Machine Learning Projects</u><br><br>
-          
-         In this project , instead of projecting all the features down to a lower dimensional space, we learned how we have to select a specific set of features so as to obtain the best classification results.
+      <div class = "project_section">
+        <p> <u>Pattern Recognition and Machine Learning Projects</u></p>
+        <a href="https://github.com/rutvijdhotey/Machine-Learning-Classification-Algorithms">
+          <div class="project_logo"><img src="../images/icons/machine_learning.svg" height="50" width="70"></div><br>
+        </a>
+         <p>In this project , instead of projecting all the features down to a lower dimensional space, we learned how we have to select a specific set of features so as to obtain the best classification results.
         <br><br>
         Feature Selection (VR and AVR)
         I used Variation Ratio to select and rank my top features according to the discriminative power calculated of every feature. I also calculated the values using Augmented Variance Ratio, but as I got better results using Variance Ratio, I used the same for final calculations. 
@@ -138,10 +151,13 @@
         After selecting top 10% features of the ranked matrix, we implement the wrapper function . This is where the Forward Feature Selection comes in. I have used 2 Classifiers in my entire working of the project. For the forward feature selection I have used my own classifier of LSE or MSE as its called. And for the final classification I have used the KNN(K nearest Neighbor) classifier.
         <p>
       </div> 
+      <hr>
 
-      <div>    
-        <p><u>UniCon : Universal Controller </u><br><br> 
-          
+      <div class = "project_section">    
+        <p><u>UniCon : Universal Controller </u></p>
+        <div class="project_logo"><img src="../images/icons/unicon.svg" height="50" width="70"></div>
+        <br>
+        <p>  
           The aim of our project was to enhance and nurture the creativity of human beings. In schools and colleges, where
           students need to learn, grasp and produce, the teaching methods are becoming rather mundane and
           uninteresting.All the brilliant creative ideas are passed on as too hard to implement because of the lack of a simple platform to use. We
@@ -153,17 +169,8 @@
           keys. All the coding was done in C.
         <p>
       </div>  
+      <hr>
 
-      <div>
-        <p> <u>Home Automation: Wireless Control of Home Appliances </u><br><br>
-          
-          Implemented using Microcontroller PIC and also using Raspberry Pi B+ as the main hub, which connects to the internet using TCP/IP protocol.
-          Controlling of devices achieved by using TRIAC and OPTOCOUPLER, which not only controls ON/OFF but also speed and intensity of fans and bulbs.
-          For communication of commands via internet to the device, RF modules and Zigbee Modules were used .
-          Internet Website was prepared using HTML5 and provided to the user for personalised control of devices.
-          Languages used during the project : Java, Python and C.
-        <p>
-      </div>  
     </section>
 
     <section id = "contact_me" class = "section_division" href="#about_me">
