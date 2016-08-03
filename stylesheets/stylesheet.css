@@ -322,4 +322,8 @@ b{
 .show {
   display:block;
   }
+
+.dont_show{
+  display: none;
+}
 }
