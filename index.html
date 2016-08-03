@@ -29,9 +29,9 @@
 
             <button id= "myBtn" onclick="myFunction()" class="collapsable-nav">Menu</button>
             <div id = "myDropdown" class="dropdown-content">
-            <li><a href="#about_me">About me</a></li>
-            <li><a href="#my_work">My Work</a></li>
-            <li><a href="#contact_me">Contact</a></li>
+            <li><a id="s1" href="#about_me">About me</a></li>
+            <li><a id="s2" href="#my_work">My Work</a></li>
+            <li><a id="s3" href="#contact_me">Contact</a></li>
             </div>
           </ul>
         </div><!-- /.container-->
@@ -192,7 +192,9 @@
   <script>
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function() {myFunction()};
-
+document.getElementById("s1").onclick = function() {myFunction()};
+document.getElementById("s2").onclick = function() {myFunction()};
+document.getElementById("s3").onclick = function() {myFunction()};
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
