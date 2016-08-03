@@ -87,10 +87,10 @@ input, textarea {
 }
 
 
-#menu>li {
+.dropdown-content>li {
     float: left;
-    display: inline;
-    padding-right: 20px;
+    display: inline-block;
+    width: 30%;
 }
 
 li>a {
@@ -101,6 +101,7 @@ li>a {
   -webkit-transition: all 0.7s ease;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
+  display: inline-block;
 }
 
 section{
@@ -110,7 +111,7 @@ section{
 }
 
 
-li>a:hover {
+ li>a:hover {
   color: #f7f7f7;
   text-decoration: none;
   background-color: #00ee09;
@@ -128,6 +129,16 @@ b{
 }
 
 /* CLASSES */
+.dropdown-content{
+  display: inline-block;
+  width: 500px;
+  float: right;
+  border-bottom: 20px;
+}
+
+.collapsable-nav{
+  display: none;
+}
 .button {
     /* To position the buttons to the same position of the text fields */
     padding-left: 90px; /* same size as the label elements */
@@ -174,9 +185,6 @@ b{
 }
 
 /* ID ELEMENTS */
-#top_nav {
-
-}
 
 #menu {
     float: right;   
@@ -259,3 +267,59 @@ b{
   transition: transform .5s;
 }
 
+
+@media (max-width: 767px ){
+
+
+  #menu{
+  margin:0;
+  padding:0;
+  display : block;
+  float: right;
+  }
+
+  #menu > li {
+    width: 30% ;
+    display: none;
+    float: right;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+
+
+  .collapsable-nav{
+    display: block;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 100px;
+    width: 60px;
+  }
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li {
+    display: block;
+    
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ 
+.show {
+  display:inline;
+  }
+}

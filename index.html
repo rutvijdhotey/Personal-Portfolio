@@ -28,10 +28,14 @@
         <div class="container">
             <a id ="brand-name" href="index.html"><img id="avatar" src="myAvatar.svg" height="60" width="55" align="left">
               Rutvij Dhotey</a>
-          <ul id = "menu">
+          <ul id = "menu"> 
+
+            <button id= "myBtn" onclick="myFunction()" class="collapsable-nav">Menu</button>
+            <div id = "myDropdown" class="dropdown-content">
             <li><a href="#about_me">About me</a></li>
             <li><a href="#my_work">My Work</a></li>
             <li><a href="#contact_me">Contact</a></li>
+            </div>
           </ul>
         </div><!-- /.container-->
     </header>
@@ -83,9 +87,9 @@
      <div>
       <p> <u>Software Engineering Intern at FanDuel, Inc. in the numberFire Data Analytics team </u></p>
       <a href="https://www.fanduel.com/">
-      <div class="company_logo"><img src="fanduel2.png" height="70" width="200"></div></a>
+      <div class="company_logo"><img src="fanduel2.png" height="80" width="200"></div></a>
       <a href="https://www.numberfire.com/">
-      <div class="company_logo"><img src="numberfire.jpg" height="70" width="200"></div></a>
+      <div class="company_logo"><img src="numberfire.jpg" height="80" width="200"></div></a>
       <ul style = "list-type : bullet">Responsibilities 
           <li>Participate in software development process, building out website features using primarily PHP</li>
           <li>Tie-in web interfaces of HTML/CSS/Javascript with service-side controllers</li>
@@ -188,5 +192,14 @@
     </section>
   </div>
   
+  <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
   </body>
 </html>
