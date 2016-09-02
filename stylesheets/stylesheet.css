@@ -183,8 +183,15 @@ b{
   border-radius : 10px;
 }
 
+
 /* ID ELEMENTS */
 
+#react{
+  display: inline-block;
+  margin-left: 20px;
+  background-color: none;
+  border-radius : 10px;
+}
 #menu {
     float: right;   
     color:#000;
