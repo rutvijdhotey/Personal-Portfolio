@@ -185,6 +185,9 @@ b{
 
 
 /* ID ELEMENTS */
+#copyright{
+  text-align: center;
+}
 
 #react{
   display: inline-block;
